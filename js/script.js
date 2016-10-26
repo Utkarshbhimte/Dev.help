@@ -1,30 +1,41 @@
 var html = [{
-    "topic": " Topic",
-    "description": " description",
-    "code": " code ec"
+     topic: " HTML ",
+     description: " description",
+     code: " code ec"
 }, {
-    "topic": " Topic",
-    "description": " description",
-    "code": " code ec"
+     topic: " CSS ",
+     description: " description",
+     code: " code ec"
 }, {
-    "topic": " Topic 1",
-    "description": " description",
-    "code": " code ec"
+     topic: " JS ",
+     description: " description",
+     code: " code ec"
 }, {
-    "topic": " Topic 2",
-    "description": " description",
-    "code": " code ec"
+    topic: " Git ",
+    description: " description",
+    code: " code ec"
 }, {
-    "topic": " Topic 3",
-    "description": " description",
-    "code": " code ec"
+    topic: " Prepros ",
+    description: " description",
+    code: " code ec"
 }];
 
 $(document).ready(function() {
 
-    jQuery.each(html, function(index, val) {
-      $(".content .container").append(" <div class='card'><h4>" + html[index].topic + "</h4><p>" + html[index].description + "</p><pre class='code'>" + html[index].code + "</pre></div>");
+  $('.sidenav li').on('click', function(event) {
+    event.preventDefault();
+    var object = $(this).text();
+    console.log(object);
+    var index = $(this).index();
+    console.log(index);
+    var obj = html[index];
+
+    $.each(obj, function(){
+      $('.content .container').append(" <div class='card'><h4>" + obj.topic + "</h4><p>" + obj.description + "</p><pre class='code'>" + obj.code + "</pre></div>");
     });
+
+  });
+
 
     // Calling for sidenav
     $('.hamburger-icon').on('click', function(event) {
@@ -39,5 +50,7 @@ $(document).ready(function() {
         $('.sidenav').removeClass('active');
         $('.hamburger-icon').removeClass('active');
     });
+
+
 
 });
