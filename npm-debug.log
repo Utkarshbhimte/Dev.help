@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'surge' ]
+2 info using npm@3.10.8
+3 info using node@v4.4.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData surge
+8 silly fetchNamedPackageData surge
+9 silly mapToRegistry name surge
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'surge',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'surge',
+12 silly mapToRegistry   name: 'surge',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/surge
+14 verbose request uri https://registry.npmjs.org/surge
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 10:11:34 PM
+17 verbose request id a31b8bb00d4de894
+18 verbose etag "B6UPZIHAX4L54YZ41TCNF4ATC"
+19 http request GET https://registry.npmjs.org/surge
+20 verbose stack Error: kill ENOSYS
+20 verbose stack     at exports._errnoException (util.js:870:11)
+20 verbose stack     at process.kill (node.js:777:15)
+20 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+20 verbose stack     at emitNone (events.js:72:20)
+20 verbose stack     at process.emit (events.js:166:7)
+20 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+20 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+20 verbose stack     at Signal.wrap.onsignal (node.js:804:46)
+21 verbose cwd C:\Users\Utkar\Documents\GitHub\DevmashHelp
+22 error Windows_NT 10.0.14393
+23 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "surge"
+24 error node v4.4.5
+25 error npm  v3.10.8
+26 error code ENOSYS
+27 error errno ENOSYS
+28 error syscall kill
+29 error kill ENOSYS
+30 error If you need help, you may report this error at:
+30 error     <https://github.com/npm/npm/issues>
+31 verbose exit [ 1, true ]
